@@ -9,45 +9,68 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!--external stylesheet-->
     <link rel="stylesheet" href="../css/signup.css" />
   </head>
   <body>
-    <div class="main">
-      <form action="">
-        <div class="container">
-          <h2>Sign Up to Bookmark</h2>
+    <div class="container">
+      <div class="header">
+        <h2>Sign Up to Bookmark</h2>
+      </div>
+      <form action="" class="form" id="form">
+        <div class="form-control">
+          <label for="">Username</label>
+          <input type="text" name="" id="username" placeholder="St80ene" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Email</label>
           <input
             type="email"
             name=""
-            id=""
-            placeholder="enter your first name"
+            id="email"
+            placeholder="Enter your email"
           />
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="enter your last name"
-          />
-          <input type="email" name="" id="" placeholder="example@email.com" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Password</label>
           <input
             type="password"
             name=""
-            id=""
+            id="password"
             placeholder="enter your password"
           />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Confirm password</label>
           <input
             type="password"
             name=""
-            id=""
+            id="confirm-password"
             placeholder="confirm your password"
           />
-          <input type="submit" value="signup" />
-          <p>
-            Already have an account? Click <a href="./login.html">here</a> to
-            login
-          </p>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
         </div>
+        <button type="submit">Sign Up</button>
+        <p>
+          Have an account already? Click <a href="./login.html">here</a> to
+          login
+        </p>
       </form>
     </div>
     <!-- <footer>
@@ -59,4 +82,5 @@
       </p>
     </footer> -->
   </body>
+  <script src="../js/signup.js"></script>
 </html>

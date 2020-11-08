@@ -294,14 +294,18 @@
             <h6>35,000+ already joined</h6>
             <h2>Stay up-to-date with what we’re doing</h2>
             <div class="sign-letter">
-              <form action="">
-                <input
-                  type="text"
-                  name="text"
-                  id=""
-                  placeholder="example@email.com"
-                />
-                <input type="button" value="Contact Us" />
+              <form action="" class="form" id="form">
+                <div class="email-wrapper">
+                  <input
+                    type="email"
+                    name="text"
+                    id="email"
+                    placeholder="enter your email address"
+                  />
+                  <img class="hide" src="./images/icon-error.svg" alt="">
+                  <small class="small">Error message</small>
+                </div>
+                <button type="submit" class="contact-btn">Contact Us</button>
               </form>
             </div>
           </div>
@@ -345,7 +349,14 @@
               <li>
                 <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
               </li>
+              <!-- <p class="attribution">
+                Challenge by
+                <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                  >Frontend Mentor</a
+                >. Coded by <a href="#">Your Name Here</a>.
+              </p> -->
             </ul>
+            
           </div>
         </div>
       </footer>

@@ -13,24 +13,50 @@
     <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
-    <div class="main">
-      <form action="">
-        <div class="container">
-          <h2>Login to Bookmark</h2>
-          <input type="email" name="" id="" placeholder="example@email.com" />
+    <div class="container">
+      <div class="header">
+        <h2>Login to Bookmark</h2>
+      </div>
+      <form action="" class="form" id="form">
+        <div class="form-control">
+          <label for="">Username</label>
+          <input type="text" name="" id="username" placeholder="St80ene" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password</label>
           <input
             type="password"
             name=""
-            id=""
+            id="password"
             placeholder="enter your password"
           />
-          <input type="submit" value="login" />
-          <p>
-            Don't have an account? Click <a href="./signup.html">here</a> to
-            sign up
-          </p>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
         </div>
+
+        <div class="form-control">
+          <label for="">Confirm password</label>
+          <input
+            type="password"
+            name=""
+            id="confirm-password"
+            placeholder="confirm your password"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p>
+          Don't have an account? Click <a href="./signup.html">here</a> to sign
+          up
+        </p>
       </form>
     </div>
   </body>
+  <script src="../js/login.js"></script>
 </html>
